@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+
+{% block style_block %}
+    <style type="text/css">
+        table.table { width: 60%; }
+    </style>
+{% endblock %}
+
+{% block content %}
+<h1>Welcome to Holland Code Online</h1>
+    <div>&nbsp;</div>
+    <h2 class="text-primary">Nice job {{ name }}!</h2>
+    <p>
+        The following personality types can be helpful when searching for a potential career.
+        Information about these personality types is from
+        <a href="http://www.onetonline.org/find/descriptor/browse/Interests/" target="_blank">
+        O*Net Online
+    </a>.
+    Based on your answers, your top three personality types are:
+    </p>
+        <div class="list-group">
+            <div class="list-group-item">
+            <h4 class="list-group-item-heading">{{ first }}</h4>
+            <p class="list-group-item-text">{{ first_descr }}</p>
+            </div>
+            <div class="list-group-item">
+            <h4 class="list-group-item-heading">{{ second }}</h4>
+            <p class="list-group-item-text">{{ second_descr }}</p>
+                </div>
+            <div class="list-group-item">
+            <h4 class="list-group-item-heading">{{ third }}</h4>
+            <p class="list-group-item-text">{{ third_descr }}</p>
+                </div>
+        </div>
+
+
+    <br>
+    <br>
+    <h2>Your total results are:</h2>
+    <table class="table table-striped table-hover ">
+    <thead>
+        <tr>
+            <th width="200px" align="left"><strong>Attributes</strong></th>
+            <th width="100px" align="left"><strong>Score</strong></th>
+        </tr>
+    </thead>
+    <tr class="info">
+        <td>Social</td>
+        <td>{{ soc }}</td>
+    </tr>
+    <tr>
+        <td>Enterprising</td>
+        <td>{{ enter }}</td>
+    </tr>
+    <tr>
+        <td>Conventional</td>
+        <td>{{ con }}</td>
+    </tr>
+    <tr>
+        <td>Realistic</td>
+        <td>{{ real }}</td>
+    </tr>
+    <tr>
+        <td>Investigative</td>
+        <td>{{ inv }}</td>
+    </tr>
+    <tr>
+        <td>Artistic</td>
+        <td>{{ art }}</td>
+    </tr>
+    </table>
+        <br>
+        <br>
+        <div class="panel panel-primary">
+  <div class="panel-heading">
+    <h2 class="panel-title">What Next?</h2>
+  </div>
+  <div class="panel-body">
+    Here is some information from the website O*Net online.  You can search for
+    types of jobs based on your personality types.  Click the link below to start:
+    <a href="http://www.onetonline.org/find/descriptor/browse/Interests/" target="_blank">
+        O*Net Online
+    </a>
+      <br>
+      <br>
+      After you see some careers that may interest you, head over to the Occupational Outlook
+    Handbook, where you can do some research on these careers:
+    <a href="http://www.bls.gov/ooh/" target="_blank">
+        Occupational Outlook Handbook
+    </a>
+
+  </div>
+            </div>
+
+        <br>
+        <p></p>
+        <br>
+        <br>
+{% endblock %}

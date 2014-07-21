@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block style_block %}
+    <style type="text/css">
+        table.table { width: 60%; }
+    </style>
+{% endblock %}
+
+{% block content %}
+        <h1 id="">Welcome to Holland Code Online</h1>
+    <div>&nbsp;</div>
+        <body>
+        <div class="container">
+         <p>Knowing your personality type may give you clues about your interests,
+        qualities, skills and talents and how they can be applied to certain careers
+        or industries. Dr. John Holland theorized that an individual can be categorized
+        into one of the six groups: Social, Enterprising, Conventional, Realistic,
+        Investigative, and Artistic.  In the following pages, check all of the words that best
+        describe you to find out which group fits you! To begin the quiz, enter your name
+        and hit the 'begin' button below.</p>
+            </div>
+        <br>
+        <br>
+        <form class="form-horizontal" method="post" action="/">
+            Name: <input type="text" name="username" value="{{
+                request.form.username }}">
+            <button type="submit" class="btn btn-primary">Begin</button>
+        </form>
+        <br>
+        <br>
+        </body>
+
+<!--something-->
+
+
+{% endblock content %}

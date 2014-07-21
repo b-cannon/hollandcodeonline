@@ -1,0 +1,142 @@
+{% extends "base.html" %}
+
+{% block style_block %}
+    <style type="text/css">
+        table.table { width: 60%; }
+    </style>
+{% endblock %}
+
+{% block content %}
+<h1 id="">Welcome to Holland Code Online</h1>
+    <div>&nbsp;</div>
+        <body>
+    <div class="checkbox">
+        <form action="{{ url_for('add_enterprise') }}" method="post">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th width="300px">Are You:</th>
+                        <th>Check</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Self confident</td>
+                    <td><label><input type="checkbox" name="enterprise_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Sociable</td>
+                    <td><label><input type="checkbox" name="enterprise_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Enthusiastic</td>
+                    <td><label><input type="checkbox" name="enterprise_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Adventurous</td>
+                    <td><label><input type="checkbox" name="enterprise_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Impulsive</td>
+                    <td><label><input type="checkbox" name="enterprise_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Inquisitive</td>
+                    <td><label><input type="checkbox" name="enterprise_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Talktative</td>
+                    <td><label><input type="checkbox" name="enterprise_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Spontaneous</td>
+                    <td><label><input type="checkbox" name="enterprise_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Assertive</td>
+                    <td><label><input type="checkbox" name="enterprise_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Persuasive</td>
+                    <td><label><input type="checkbox" name="enterprise_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Energetic</td>
+                    <td><label><input type="checkbox" name="enterprise_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Popular</td>
+                    <td><label><input type="checkbox" name="enterprise_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Optimistic</td>
+                    <td><label><input type="checkbox" name="enterprise_attr" value="edit">Yes</label></td>
+                </tr>
+                <thead>
+                    <tr>
+                        <th width="300px">Can You:</th>
+                        <th>Check</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Initiate projects</td>
+                    <td><label><input type="checkbox" name="enterprise_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Sell things or promote ideas</td>
+                    <td><label><input type="checkbox" name="enterprise_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Give speeches</td>
+                    <td><label><input type="checkbox" name="enterprise_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Lead a group</td>
+                    <td><label><input type="checkbox" name="enterprise_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Persuade others</td>
+                    <td><label><input type="checkbox" name="enterprise_attr" value="edit">Yes</label></td>
+                </tr>
+                <thead>
+                    <tr>
+                        <th width="300px">Do you like to:</th>
+                        <th>Check</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Make decisions affecting others</td>
+                    <td><label><input type="checkbox" name="enterprise_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Be the best</td>
+                    <td><label><input type="checkbox" name="enterprise_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Start your own business</td>
+                    <td><label><input type="checkbox" name="enterprise_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Campaign for office</td>
+                    <td><label><input type="checkbox" name="enterprise_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Meet important people</td>
+                    <td><label><input type="checkbox" name="enterprise_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Have power or status</td>
+                    <td><label><input type="checkbox" name="enterprise_attr" value="edit">Yes</label></td>
+                </tr>
+            </table>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <br>
+    <br>
+        <div class="progress">
+  <div class="progress-bar" style="width: 34%;"></div>
+</div>
+    </body>
+
+
+{% endblock %}

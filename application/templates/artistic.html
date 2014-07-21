@@ -1,0 +1,135 @@
+{% extends "base.html" %}
+
+{% block style_block %}
+    <style type="text/css">
+        table.table { width: 60%; }
+    </style>
+{% endblock %}
+
+{% block content %}
+<h1 id="">Welcome to Holland Code Online</h1>
+    <div>&nbsp;</div>
+      <body>
+    <div class="checkbox">
+        <form action="{{ url_for('add_artistic') }}" method="post">
+            <table class="table table-striped table-hover">
+                <thead>
+                <tr>
+                    <th width="300px">Are You:</th>
+                    <th>Check</th>
+                </tr>
+                </thead>
+                <tr>
+                    <td>Creative</td>
+                    <td><label><input type="checkbox" name="artistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Imaginative</td>
+                    <td><label><input type="checkbox" name="artistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Unconventional</td>
+                    <td><label><input type="checkbox" name="artistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Independent</td>
+                    <td><label><input type="checkbox" name="artistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Original</td>
+                    <td><label><input type="checkbox" name="artistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Impulsive</td>
+                    <td><label><input type="checkbox" name="artistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Courageous</td>
+                    <td><label><input type="checkbox" name="artistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Complicated</td>
+                    <td><label><input type="checkbox" name="artistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Innovative</td>
+                    <td><label><input type="checkbox" name="artistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Expressive</td>
+                    <td><label><input type="checkbox" name="artistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Sensitive</td>
+                    <td><label><input type="checkbox" name="artistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Idealistic</td>
+                    <td><label><input type="checkbox" name="artistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <thead>
+                    <tr>
+                        <th width="300px">Can You:</th>
+                        <th>Check</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Sketch, draw, paint</td>
+                    <td><label><input type="checkbox" name="artistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Play a musical instrument</td>
+                    <td><label><input type="checkbox" name="artistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Write stories or poems</td>
+                    <td><label><input type="checkbox" name="artistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Sing, act or dance</td>
+                    <td><label><input type="checkbox" name="artistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Design fashions or interiors</td>
+                    <td><label><input type="checkbox" name="artistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <thead>
+                    <tr>
+                        <th width="300px">Do you like to:</th>
+                        <th>Check</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Go to concerts, theaters, or art exhibits</td>
+                    <td><label><input type="checkbox" name="artistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Read fiction, plays or poetry</td>
+                    <td><label><input type="checkbox" name="artistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Work on crafts</td>
+                    <td><label><input type="checkbox" name="artistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Take photographs</td>
+                    <td><label><input type="checkbox" name="artistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Be creative</td>
+                    <td><label><input type="checkbox" name="artistic_attr" value="edit">Yes</label></td>
+                </tr>
+            </table>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <br>
+    <br>
+      <div class="progress">
+  <div class="progress-bar" style="width: 100%;"></div>
+</div>
+    </body>
+
+
+
+{% endblock %}

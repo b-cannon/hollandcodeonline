@@ -1,0 +1,146 @@
+{% extends "base.html" %}
+
+{% block style_block %}
+    <style type="text/css">
+        table.table { width: 60%; }
+    </style>
+{% endblock %}
+
+{% block content %}
+<h1 id="">Welcome to Holland Code Online</h1>
+    <div>&nbsp;</div>
+        <body>
+    <div class="checkbox">
+        <form action="{{ url_for('add_realistic') }}" method="post">
+            <table class="table table-striped table-hover">
+                <thead>
+                    <tr>
+                        <th width="300px">Are You:</th>
+                        <th>Check</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Practical/thrifty</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Frank</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>A nature lover</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Curious</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Concrete</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Self-controlled</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Ambitious</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Persistent</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Athletic</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Mechanical</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Stable</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Independent</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <thead>
+                    <tr>
+                        <th width="300px">Can You:</th>
+                        <th>Check</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Fix & solve electrical items</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Pitch a tent</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Play a sport</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Read a blueprint</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Plant a garden</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Operate tools</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <thead>
+                    <tr>
+                        <th width="300px">Do you like to:</th>
+                        <th>Check</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Tinker with machines and cars</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Work outdoors</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Be physically active</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Use your hands</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Build things</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Care for animals</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+                <tr>
+                    <td>Work on electronics</td>
+                    <td><label><input type="checkbox" name="realistic_attr" value="edit">Yes</label></td>
+                </tr>
+            </table>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <br>
+    <br>
+        <div class="progress">
+  <div class="progress-bar" style="width: 67%;"></div>
+</div>
+</body>
+
+
+{% endblock %}
